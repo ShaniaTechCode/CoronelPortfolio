@@ -1,0 +1,21 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+
+# Python cache
+*.pyc
+__pycache__/
+
+# Database
+db.sqlite3
+
+# Virtual environment
+.venv/
+env/
+
+# Django static files
+/staticfiles/
+
+# Environment variables
+.env
+
+#Logs
+*.log
