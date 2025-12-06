@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-441=o_7&)w3po^+e(=+(4&npwvt-qekf49ot)#cal5c@hs%ulh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost',]
 
 
 # Default auto field
@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middle.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Coronel_Portfolio.urls'
@@ -118,4 +119,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
+STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = 'static/'
