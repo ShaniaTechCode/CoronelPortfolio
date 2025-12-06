@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-441=o_7&)w3po^+e(=+(4&npwvt-qekf49ot)#cal5c@hs%ulh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['coronelportfolio.onrender.com']
+# ALLOWED_HOSTS = ['coronelportfolio.onrender.com']
+ALLOWED_HOSTS = ['coronelportfolio.onrender.com', 'www.coronelportfolio.onrender.com']
+
 
 # Default auto field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
