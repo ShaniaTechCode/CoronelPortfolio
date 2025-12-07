@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-441=o_7&)w3po^+e(=+(4&npwvt-qekf49ot)#cal5c@hs%ulh
 DEBUG = False
 
 # ALLOWED_HOSTS = ['coronelportfolio.onrender.com']
-ALLOWED_HOSTS = ['*']
+
+ALLOWED_HOSTS = ['coronelportfolio.onrender.com', '.onrender.com', 'localhost', '127.0.0.1']
+
 
 # Default auto field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
@@ -63,9 +65,11 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.static',
             ],
         },
     },
