@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-441=o_7&)w3po^+e(=+(4&npwvt-qekf49ot)#cal5c@hs%ulh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['coronelportfolio.onrender.com']
 
