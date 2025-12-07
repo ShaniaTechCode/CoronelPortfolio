@@ -27,8 +27,9 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['coronelportfolio.onrender.com']
 
-ALLOWED_HOSTS = ['coronelportfolio.onrender.com', '.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = ['https://*.onrender.com']
 
 # Default auto field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
